@@ -1,6 +1,7 @@
+import 'package:blood_finder/core/theme/theme.dart';
 import 'package:flutter/material.dart';
 
-import 'home/home_screen.dart';
+import 'core/services/router/router.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,16 +10,14 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Blood Finder',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+    return MediaQuery.withClampedTextScaling(
+      maxScaleFactor: 1.5,
+      child: MaterialApp.router(
+        theme: context.themeData,
+        routerConfig: goRouter,
       ),
-      home: const HomeScreen(),
     );
   }
 }
