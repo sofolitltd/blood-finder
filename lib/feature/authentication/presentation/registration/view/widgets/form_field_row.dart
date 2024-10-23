@@ -23,7 +23,7 @@ class _FormFIeldRow extends StatelessWidget {
             controller: controllerLeft,
           ),
         ),
-        const Gap(20),
+        const Gap(16),
         Expanded(
           child: CustomTextFormField(
             hintText: hintTextRight,

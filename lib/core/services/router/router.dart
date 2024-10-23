@@ -9,6 +9,7 @@ import '../../../feature/splash/presentation/view/splash_page.dart';
 import 'routes.dart';
 
 final GoRouter goRouter = GoRouter(
+  // initialLocation: Routes.registration,
   routes: [
     GoRoute(
       path: Routes.initial,
