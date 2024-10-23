@@ -47,7 +47,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           ),
           IconButton(
             onPressed: () {
-              context.pushReplacementNamed(Routes.home);
+              context.pushReplacementNamed(Routes.login);
             },
             style: IconButton.styleFrom(
               backgroundColor: context.color.primary,

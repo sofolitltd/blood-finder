@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../feature/authentication/presentation/login/view/login_page.dart';
+import '../../../feature/authentication/presentation/registration/view/registration_page.dart';
 import '../../../feature/home/presentation/view/home_page.dart';
 import '../../../feature/onboard/presentation/view/onboard_page.dart';
 import '../../../feature/splash/presentation/view/splash_page.dart';
@@ -20,6 +22,20 @@ final GoRouter goRouter = GoRouter(
       name: Routes.onboard,
       pageBuilder: (context, state) => const MaterialPage(
         child: OnboardingPage(),
+      ),
+    ),
+    GoRoute(
+      path: Routes.login,
+      name: Routes.login,
+      pageBuilder: (context, state) => const MaterialPage(
+        child: LoginPage(),
+      ),
+    ),
+    GoRoute(
+      path: Routes.registration,
+      name: Routes.registration,
+      pageBuilder: (context, state) => const MaterialPage(
+        child: RegistrationPage(),
       ),
     ),
     GoRoute(
