@@ -41,9 +41,7 @@ class CustomTextFormField extends StatelessWidget {
           ),
         ),
         suffixIconColor: context.color.border,
-        hintStyle: context.textStyle.body14Regular.copyWith(
-          color: context.color.icon,
-        ),
+        hintStyle: context.textStyle.fieldHint,
       ),
     );
   }

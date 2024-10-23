@@ -6,9 +6,7 @@ class _AppBarTheme with ThemeExtensions {
       elevation: 1,
       centerTitle: true,
       titleSpacing: 0,
-      titleTextStyle: textStyle.appBar.title.copyWith(
-        color: color.appBar.title,
-      ),
+      titleTextStyle: textStyle.body14Regular,
       backgroundColor: color.background,
       surfaceTintColor: color.onSurfaceLow,
       iconTheme: IconThemeData(color: color.appBar.icon),

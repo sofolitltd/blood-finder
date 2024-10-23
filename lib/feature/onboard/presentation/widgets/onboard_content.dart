@@ -20,13 +20,13 @@ class _OnboardingContent extends StatelessWidget {
           const Gap(30),
           Text(
             data.title,
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            style: context.textStyle.title24Semibold,
           ),
           const Gap(30),
           Text(
             data.description,
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 16),
+            style: context.textStyle.body16Regular
           ),
         ],
       ),
